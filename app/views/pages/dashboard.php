@@ -10,8 +10,9 @@
                 <div class="card-body text-primary">
                     <canvas id="pieChart" style="max-width: 500px;"></canvas>
                     <br>
-                    <!-- <div class="text-dark mt-5">total investment: <?php //  echo $totalInvestment; 
+                    <!-- <div class="text-dark mt-5">total investment: <?php //echo $totalInvestment;
                                                                         ?></div> -->
+
                 </div>
             </div>
         </div>
@@ -34,6 +35,4 @@
 </div>
 
 </div>
-
 <?php require_once APPROOT . "/views/includes/footer.php" ?>
-?>

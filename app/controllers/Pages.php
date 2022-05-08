@@ -1,10 +1,12 @@
 <?php
 session_start();
-
 class Pages extends Controller
 {
+    protected $chart;
     public function __construct()
     {
+        require APPROOT . "/helpers/Chart.php";
+
         //redirects to login if not logged in
         if (empty($_SESSION)) {
 ?>
@@ -13,6 +15,7 @@ class Pages extends Controller
             </script>
         <?php
         }
+
 
         //logout
         if (isset($_POST['logout'])) {
@@ -23,15 +26,23 @@ class Pages extends Controller
             </script>
 <?php
         }
+        $this->chart = new Chart();
     }
 
 
     //dashboard
     public function dashboard()
     {
-        $this->modelObj = $this->model("Items");
-        $this->result = $this->modelObj->dashboard();
         $this->view("pages/dashboard");
+
+        $this->modelObj = $this->model("Items");
+        $this->result = $this->modelObj->dashboard("pieChart");
+
+        $this->chart->pieStart($this->result);
+        $this->chart->pieEnd();
+
+        $this->result = $this->modelObj->dashboard("lineChart");
+        $this->chart->lineChart($this->result);
     }
 
 

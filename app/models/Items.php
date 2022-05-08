@@ -4,16 +4,14 @@ class Items extends Database
 {
     protected $result;
 
-    public function dashboard()
+    public function dashboard($func)
     {
+        echo $func;
+        $charts = new Items();
         $user_id = $_SESSION['user']['id'];
-        $sql = "select name, quantity, cp from items where user_id='$user_id'";
-        $this->result = $this->query($sql);
-        if (is_bool($this->result)) {
-            echo "data stored successfully";
-        } else {
-            return $this->result;
-        }
+        $this->result = $charts->$func($user_id);
+
+        return $this->result;
     }
 
     public function pl()
@@ -31,5 +29,17 @@ class Items extends Database
         $sql = "select * from items where user_id='$user_id'";
         $this->result = $this->query($sql);
         return $this->result;
+    }
+
+    public function pieChart($user_id)
+    {
+        $sql = "select name, quantity, cp from items where user_id='$user_id'";
+        return $this->query($sql);
+    }
+
+    public function lineChart($user_id)
+    {
+        $sql = "select datee,sum(salesAmt) as 'group' from pl where user_id='$user_id' GROUP by datee order by datee desc";
+        return $this->query($sql);
     }
 }
