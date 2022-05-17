@@ -8,12 +8,12 @@
             <form method="post">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="inputName" id="title">name</label>
-                        <input type="text" class="form-control" id="editName" name="editName" required>
+                        <label for="inputPrice" id="title">quantity</label>
+                        <input type="number" class="form-control" id="inputPrice" name="inputPrice">
                     </div>
 
                     <div class=" form-group">
-                        <label for="inputPrice" id="amount">price</label>
+                        <label for="editPrice" id="amount">price</label>
                         <input type="number" class="form-control" id="editPrice" name="editPrice" required>
                     </div>
                 </div>

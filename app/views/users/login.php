@@ -1,7 +1,7 @@
 <?php require_once APPROOT . "/views/includes/header.php"; ?>
 
 
-<body style="background-image: url('<?php echo IMG ?>blur.webp') ; background-repeat: no-repeat;  background-size: 100%">
+<body style="background-image: url('<?php echo IMG ?>darkGradient.jpg') ; background-repeat: no-repeat;  background-size: 100%">
     <div class="card mb-3 bg-light shadow-lg" style="max-width: 540px; margin:0 auto;margin-top:3%">
         <div class="row g-0">
             <div class="col-md-4 col-sm bg-dark">

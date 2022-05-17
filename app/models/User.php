@@ -22,6 +22,9 @@ class User extends Database
     {
         $sql = "insert into user (name,company, password) values ('$name','$company','$password') ";
         $this->query($sql);
+        $result = $this->getUserId($name, $company);
+        $result = $result->fetch_assoc();
+        return $result;
     }
 
     //check for existing user
@@ -30,5 +33,18 @@ class User extends Database
         $this->company = $_POST['company'];
         $sql = "select * from user where company='$this->company'";
         return $this->query($sql);
+    }
+
+    //gets the id of the newly signed up user
+    public function getUserId($name, $company)
+    {
+        $sql = "select id from user where name='$name' and company='$company'";
+        $result = $this->query($sql);
+        return $result;
+?>
+        <script>
+            alert(<?php print_r($result) ?>)
+        </script>
+<?php
     }
 }

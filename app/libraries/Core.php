@@ -15,6 +15,7 @@ class Core
     public function __construct()
     {
         $url = $this->getUrl();
+        
 
         //look in controllers for first index
 

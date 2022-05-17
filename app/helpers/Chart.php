@@ -1,7 +1,10 @@
 <?php
 class Chart
 {
-    public function pieStart($result)
+    protected $totalInvestment;
+
+    //pie chart
+    public function pieChart($result)
     {
 ?>
         <script>
@@ -12,14 +15,14 @@ class Chart
         </script>
 
         <?php
-        $totalInvestment = 0;
+        $this->totalInvestment = 0;
         foreach ($result as $row) {
         ?>
             <script>
                 <?php $investment = $row['quantity'] * $row['cp']; ?>
                 quantity.push(<?php echo $investment ?>);
                 label.push("<?php echo $row['name'] ?>")
-                <?php $totalInvestment += $investment; ?>
+                <?php $this->totalInvestment += $investment; ?>
 
                 function getRandomColor() {
                     var letters = '0123456789ABCDEF';
@@ -35,14 +38,9 @@ class Chart
             </script>
         <?php
         }
-    }
 
-
-    public function pieEnd()
-    {
         ?>
         <script>
-            //pie js start
             var quantity = quantity
             var bg = background
             var bgc = hover
@@ -66,10 +64,10 @@ class Chart
             });
         </script>
     <?php
-
-
     }
 
+
+    //line chart
     public function lineChart($result)
     {
 
@@ -78,7 +76,6 @@ class Chart
             var datee = [];
             var pl = [];
             <?php
-            // while ($row = $this->result->fetch_assoc()) {
             foreach ($result as $row) {
             ?>
                 datee.push('<?php echo $row['datee']; ?>')
@@ -91,9 +88,7 @@ class Chart
         <script>
             let dateLabels = datee;
             let data = pl;
-
             var lineChart = document.getElementById("lineChart").getContext('2d');
-
             let gradient = lineChart.createLinearGradient(0, 0, 0, 400)
             gradient.addColorStop(0, "rgb(58,123,231,1");
             gradient.addColorStop(1, "rgb(0,210,255,0.3");

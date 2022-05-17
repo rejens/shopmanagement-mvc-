@@ -7,13 +7,9 @@
             </div>
             <form method="post">
                 <div class="modal-body">
-                    <div class="form-group">
-                        <label for="inputName" id="title">name</label>
-                        <input type="text" class="form-control" id="soldName" name="soldName" required>
-                    </div>
 
                     <div class=" form-group">
-                        <label for="inputQuantity" id="amount">quantity</label>
+                        <label for="soldQuantity" id="amount">quantity</label>
                         <input type="number" class="form-control" id="soldQuantity" name="soldQuantity" required>
                     </div>
 

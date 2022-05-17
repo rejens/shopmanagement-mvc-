@@ -6,7 +6,7 @@ this loads the model and views
 */
 
 
-class Controller extends Database
+class Controller
 {
     public $modelObj;
     public $result;

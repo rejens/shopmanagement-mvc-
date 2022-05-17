@@ -23,10 +23,18 @@ class Database
         // $dsn = "mysql:host=$this->host;dbname=$this->dbName";
         // $this->pdo = new PDO($dsn, $this->user, $this->password);
         $this->conn = new mysqli($this->host, $this->user, $this->password, $this->dbName);
+?>
+        <script>
+            //  alert(<?php //echo $_SESSION['user']['id'] 
+                        ?>)
+        </script>
+<?php
     }
 
     public function query($sql)
     {
+        $this->conn = new mysqli($this->host, $this->user, $this->password, $this->dbName);
+
         //$this->pdo->query($sql);
         // $this->pdo->query("insert into post values(1,'rayamajhi'");
         return $this->conn->query($sql);

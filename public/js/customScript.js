@@ -4,7 +4,6 @@
 //     function(){$(".side-nav").css("background","white")})
 // });
 
-$(document).ready(function(){
             
                     
         //notification funciton
@@ -29,8 +28,34 @@ $(document).ready(function(){
         });
 
 //tooltip function
-          $(function() {
+        $(function() {
         $('[data-toggle="tooltip"]').tooltip()
-    })
-            
-            });
+    });
+    
+
+//modal work
+        $(".addButton").click(function() {
+            $("#addModal").modal("show")
+        })
+        $(".editButton").click(function() {
+            $("#editModal").modal("show")
+        })
+
+        $(".deleteButton").click(function() {
+            $("#deleteModal").modal("show")
+        })
+
+        $(".stockButton").click(function() {
+            $("#stockModal").modal("show")
+        })
+
+        $(".soldButton").click(function() {
+            $("#soldModal").modal("show")
+        })
+
+        
+        //prevents dropdown close on navigation dropdown
+        $(".settings-dropdown").on("click", function(event) {
+            // event.preventDefault();
+            event.stopPropagation();
+        })

@@ -1,8 +1,21 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "", "shop_management");
-$sql = "select * from items";
-$result = $conn->query($sql);
-foreach ($result as $rows) {
-    print_r($rows);
+
+class A
+{
+
+    public function __construct()
+    {
+        echo "this is constructor A";
+    }
 }
+
+class B extends A
+{
+    public function __construct()
+    {
+        echo "this is constructor B";
+    }
+}
+
+$obj = new B();

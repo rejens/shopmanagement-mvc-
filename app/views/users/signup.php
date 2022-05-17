@@ -1,6 +1,6 @@
 <?php require_once APPROOT . "/views/includes/header.php"; ?>
 
-<body style="background-image: url('<?php echo IMG ?>blur.webp') ; background-repeat: no-repeat;  background-size: 100%">
+<body style="background-image: url('<?php echo IMG ?>darkGradient.jpg') ; background-repeat: no-repeat;  background-size: 100%">
 
     <section class="vh-100">
         <div class="container h-100">
@@ -50,7 +50,7 @@
                                                     <label class="form-label" for="password">Password</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
-                                                            <div class="input-group-text"> <i class="fas fa-lock fa-lg "></i>
+                                                            <div class="input-group-text"> <i class="fas fa-lock fa-lg py-1 "></i>
                                                             </div>
                                                         </div>
                                                         <input type="password" name=password name id="password" class="form-control" required />
@@ -60,7 +60,7 @@
                                         </div>
 
                                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                            <button type="submit" name="register" class="btn btn-dark btn-lg">Signup</button>
+                                            <button type="submit" name="signup" class="btn btn-dark btn-lg">Signup</button>
                                         </div>
 
                                     </form>

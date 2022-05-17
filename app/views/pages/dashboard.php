@@ -1,18 +1,15 @@
 <?php require_once APPROOT . "/views/includes/includes.php" ?>
 
 
-<div class="container-fluid">
+<div class="container-fluid chart-section ">
     <div class="row">
         <!--   pie chart start-->
-        <div class="  col-lg-4 col-md-5 ">
-
-            <div class="card bg-light mb-3 ml-0 shadow-lg pie-chart" style="max-width: 20rem; background-color:#F4FCD9; height:30rem;border-radius: 15px; ">
+        <div class="col-lg-4 col-md-5 ">
+            <div class="card bg-light mb-3 ml-0 shadow-lg pie-chart" style="background-color:#F4FCD9; height:30rem;border-radius: 15px; ">
                 <div class="card-body text-primary">
-                    <canvas id="pieChart" style="max-width: 500px;"></canvas>
-                    <br>
-                    <!-- <div class="text-dark mt-5">total investment: <?php //echo $totalInvestment;
-                                                                        ?></div> -->
+                    <canvas id="pieChart"></canvas>
 
+                    <br>
                 </div>
             </div>
         </div>
@@ -35,4 +32,3 @@
 </div>
 
 </div>
-<?php require_once APPROOT . "/views/includes/footer.php" ?>
