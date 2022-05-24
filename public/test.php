@@ -1,21 +1,26 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-class A
-{
+<body>
+    <select name="select" id="">
+        <option value="admin">admin</option>
+        <option value="user">user</option>
+    </select>
 
-    public function __construct()
-    {
-        echo "this is constructor A";
-    }
-}
+    <button type="input">submit</button>
+</body>
 
-class B extends A
-{
-    public function __construct()
-    {
-        echo "this is constructor B";
-    }
-}
+<script>
+    document.querySelector("select").addEventListener("input", function() {
+        document.querySelector("button").setAttribute("disabled", "disabled")
+    })
+</script>
 
-$obj = new B();
+</html>

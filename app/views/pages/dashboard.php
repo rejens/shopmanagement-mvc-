@@ -32,3 +32,4 @@
 </div>
 
 </div>
+<script src="<?php echo URLROOT ?>/js/customScript.js"></script>

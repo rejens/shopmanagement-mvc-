@@ -26,7 +26,7 @@
     <!--chartjs links end-->
 
     <!-- custom css-->
-    <link rel="stylesheet" href="<?php echo URLROOT ?>public/css/style.css">
+    <link rel="stylesheet" href="<?php echo URLROOT ?>/css/style.css">
     <!-- custom css-->
 
     <!-- sweet alert-->
@@ -37,4 +37,10 @@
     <link rel="stylesheet" href="<?php echo URLROOT ?>jquery-ui-1.13.1.custom/jquery-ui.min.css">
     <script src=" <?php echo URLROOT ?>jquery-ui-1.13.1.custom/external/jquery/jquery.js"></script>
     <script src="<?php echo URLROOT ?>jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
 </head>

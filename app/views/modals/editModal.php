@@ -8,18 +8,18 @@
             <form method="post">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="inputPrice" id="title">quantity</label>
-                        <input type="number" class="form-control" id="inputPrice" name="inputPrice">
+                        <label for="updateQuantity" id="title">add quantity (optional)</label>
+                        <input type="number" class="form-control" id="updateQuantity" name="updateQuantity">
                     </div>
 
                     <div class=" form-group">
-                        <label for="editPrice" id="amount">price</label>
-                        <input type="number" class="form-control" id="editPrice" name="editPrice" required>
+                        <label for="updatePrice" id="amount">update price</label>
+                        <input type="number" class="form-control" id="updatePrice" name="updatePrice" required>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="modalClose" data-bs-dismiss="modal">Close</button>
-                    <input type="submit" class="btn btn-primary" id="saveModal" name="saveEditModal" values="save changes">
+                    <input type="submit" class="btn btn-primary" id="saveUpdateModal" name="saveUpdateModal" values="save changes">
                 </div>
             </form>
         </div>

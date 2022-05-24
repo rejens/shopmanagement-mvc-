@@ -7,31 +7,29 @@
             <th scope="col">date</th>
             <th scope="col">name</th>
             <th scope="col">quantity</th>
-            <th scope="col">profit/loss</th>
-            <th scope="col">sales</th>
+            <th scope="col">price</th>
+            <th scope="col">vendor</th>
 
         </tr>
     </thead>
-    <?php
+    <form method='post'>
+        <tbody>
+            <?php
 
-    foreach ($this->result as $row) {
-        echo " <form method='post'> <tbody>
+            foreach ($this->result as $row) {
+                echo " 
 <tr>
-
 <td>" . $row['datee'] . "</td>
 <td>" . $row['name'] . "</td> 
 <td>" . $row['quantity'] . "</td>
-<td>" . $row['pl'] . "</td> 
-<td>" . $row['salesAmt'] . "</td> 
-
-
+<td>" . $row['price'] . "</td> 
+<td>" . $row['vendor'] . "</td> 
 </tr>
-
-</tbody>
-
 ";
-    }
-    ?>
+            }
+            ?>
+
+        </tbody>
 </table>
 
 

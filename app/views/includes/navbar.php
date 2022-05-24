@@ -16,9 +16,12 @@
                     <div class="dropdown ms-1 ">
                         <button class="btn btn-secondary dropdown-toggle  nav-btn" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static">
                             <i class="fa-solid fa-bell"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="notificationBadge">
+
+                            </span>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="bd-versions" data-bs-popper="static">
-                            <li class="dropdown-item list-group-item-action list-group-item-light" href="#">this is notification</li>
+                        <ul class="dropdown-menu dropdown-menu-end notificationCenter" aria-labelledby="bd-versions" data-bs-popper="static">
+                            <!-- <li class="dropdown-item list-group-item-action list-group-item-light" href="#">this is notification</li> -->
                         </ul>
                     </div>
                 </div>
@@ -29,7 +32,7 @@
                         <button class="btn btn-secondary dropdown-toggle  nav-btn" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static">
                             <i class="fa-solid fa-angle-down"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end  " aria-labelledby="bd-versions" data-bs-popper="static">
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions" data-bs-popper="static">
                             <li class="list-group-item-action list-group-item-light">
                                 <button class="btn btn-toggle align-items-center rounded settings-dropdown" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
                                     <i class="fa-solid fa-gear me-2"></i>settings

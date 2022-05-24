@@ -12,10 +12,13 @@
 
         </tr>
     </thead>
-    <?php
 
-    foreach ($this->result as $row) {
-        echo " <form method='post'> <tbody>
+    <form method='post'>
+        <tbody>
+            <?php
+
+            foreach ($this->result as $row) {
+                echo " 
 <tr>
 
 <td>" . $row['datee'] . "</td>
@@ -27,11 +30,12 @@
 
 </tr>
 
-</tbody>
+
 
 ";
-    }
-    ?>
+            }
+            ?>
+        </tbody>
 </table>
 
 

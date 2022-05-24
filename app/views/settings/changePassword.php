@@ -15,16 +15,19 @@
         <div class=" card text-white bg-secondary mb-3  " style="width:380px">
             <div class="card-header text-center fs-3">change your password</div>
             <div class="card-body">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="old password">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="new password">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="confirm password">
-                </div>
 
+                <form method="POST">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="old password">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="new password">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="confirm password">
+                    </div>
+                    <input type="submit" value="submit" name="changePasswordSubmit">
+                </form>
             </div>
         </div>
     </div>

@@ -1,11 +1,5 @@
-// $('document').ready(function() {
+'use strict';
 
-//     $(".side-nav").hover(function(){$(".side-nav").css("background","blue")},
-//     function(){$(".side-nav").css("background","white")})
-// });
-
-            
-                    
         //notification funciton
         var down = false;
         
@@ -33,7 +27,7 @@
     });
     
 
-//modal work
+// modal work
         $(".addButton").click(function() {
             $("#addModal").modal("show")
         })
@@ -53,9 +47,22 @@
             $("#soldModal").modal("show")
         })
 
-        
         //prevents dropdown close on navigation dropdown
         $(".settings-dropdown").on("click", function(event) {
             // event.preventDefault();
             event.stopPropagation();
         })
+
+        //delete modal
+        function getId(id) {
+            document.cookie = "id=" + id;
+        }
+        //notification control
+    function notification(noti){
+        alert("check")
+        $(".notificationCenter").html(noti)
+    }
+        
+
+
+

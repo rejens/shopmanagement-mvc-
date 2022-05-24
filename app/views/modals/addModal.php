@@ -10,7 +10,7 @@
                 <div class="modal-body mb-1">
                     <div class="form-group">
                         <label for="inputName">name</label>
-                        <input type="text" class="form-control" id="inputName" name="inputName">
+                        <input type="text" class="form-control" id="inputName" name="inputName" required>
                     </div>
                     <div class=" form-group mb-1">
                         <label for="inputCp">cp</label>
@@ -32,7 +32,6 @@
                         <label for="inputVendor">vendor</label>
                         <input type="text" class="form-control" id="inputVendor" name="inputVendor">
                     </div>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="modalClose" data-bs-dismiss="modal">Close</button>

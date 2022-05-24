@@ -46,5 +46,21 @@ class User extends Database
             alert(<?php print_r($result) ?>)
         </script>
 <?php
+
+    }
+
+
+    public function checkPassword($oldPassword)
+    {
+        $id = $_SESSION['user']['id'];
+        $sql = "select password from user where id=$id";
+        return $this->query($sql);
+    }
+
+    public function changePassword($password)
+    {
+        $id = $_SESSION['user']['id'];
+        $sql = "update user set password=$password where id=$id";
+        $this->query($sql);
     }
 }
