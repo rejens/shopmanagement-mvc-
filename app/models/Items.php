@@ -7,6 +7,7 @@ class Items extends Database
 
     public function __construct()
     {
+        $_SERVER['QUERY_STRING'];
     }
 
     public function dashboard($func)
@@ -122,3 +123,4 @@ class Items extends Database
         $this->query($sql);
     }
 }
+?>

@@ -19,9 +19,12 @@ class Users extends Controller
             if ($result) {
                 if (password_verify($_POST['password'], $result['password'])) {
                     $_SESSION['user'] = $result;
-                    echo "<script>
-                        window.location.replace(<?php echo URLROOT ?> );
-                    </script>";
+?>
+                    <script>
+                        location.replace("<?php echo URLROOT ?>")
+                    </script>
+                <?php
+
                 } else { ?>
                     <script>
                         swal({

@@ -18,7 +18,7 @@
 </body>
 
 <script>
-    document.querySelector("select").addEventListener("input", function() {
+    document.querySelector("select").addEventListener("click", function() {
         document.querySelector("button").setAttribute("disabled", "disabled")
     })
 </script>

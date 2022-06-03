@@ -53,12 +53,10 @@
 </table>
 
 
-<?php require  APPROOT . "/views/modals/addModal.php" ?>
-<?php require  APPROOT . "/views/modals/deleteModal.php" ?>
-<?php require  APPROOT . "/views/modals/editModal.php" ?>
-<?php require  APPROOT . "/views/modals/soldModal.php" ?>
-<?php require  APPROOT . "/views/modals/stockModal.php" ?>
-
-
-
-<?php require_once APPROOT . "/views/includes/footer.php" ?>
+<?php require  APPROOT . "/views/modals/addModal.php";
+require  APPROOT . "/views/modals/deleteModal.php";
+require  APPROOT . "/views/modals/editModal.php";
+require  APPROOT . "/views/modals/soldModal.php";
+require  APPROOT . "/views/modals/stockModal.php";
+require  APPROOT . "/views/includes/footer.php";
+?>

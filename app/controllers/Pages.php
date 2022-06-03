@@ -61,7 +61,7 @@ class Pages extends Controller
 
 
     //inventory
-    public function inventory()
+    public function inventory($param)
     {
         $this->result = $this->modelObj->inventory();
         $this->view("pages/inventory");
