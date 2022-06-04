@@ -47,7 +47,7 @@ class Pages extends Controller
     //buying transaction
     public function sellingTransaction()
     {
-        $this->result = $this->modelObj->sellingTransaction();
+        // $this->result = $this->modelObj->sellingTransaction();
         $this->view("pages/sellingTransaction");
     }
 
@@ -55,15 +55,15 @@ class Pages extends Controller
     //selling transaction
     public function buyingTransaction()
     {
-        $this->result = $this->modelObj->buyingTransaction();
+        // $this->result = $this->modelObj->buyingTransaction();
         $this->view("pages/buyingTransaction");
     }
 
 
     //inventory
-    public function inventory($param)
+    public function inventory()
     {
-        $this->result = $this->modelObj->inventory();
+        // $this->result = $this->modelObj->inventory($param);
         $this->view("pages/inventory");
 
         if (isset($_POST['saveAddModal'])) {

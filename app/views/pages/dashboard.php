@@ -29,9 +29,7 @@
     </div>
 
 </div>
-</div>
 
 </div>
+</div>
 <script src="<?php echo URLROOT ?>/js/customScript.js"></script>
-<script src="<?php //echo URLROOT
-                ?>/js/ajax.js"></script>

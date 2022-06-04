@@ -1,7 +1,15 @@
 <?php require_once APPROOT . "/views/includes/includes.php" ?>
-
-
-<table class=" mt-1 table  table-striped  table-borderless table-hover ">
+<div class="form-group d-flex w-50 justify-content-around">
+    <div>
+        <label for="">from </label>
+        <input type="date" class="form-control buying-transaction-table" name="" id="buying-transaction-table-from" aria-describedby="helpId" placeholder="">
+    </div>
+    <div>
+        <label for="">to </label>
+        <input type="date" class="form-control buying-transaction-table" name="" id="buying-transaction-table-to" aria-describedby="helpId" placeholder="">
+    </div>
+</div>
+<table class=" mt-1 table  table-striped  table-borderless table-hover">
     <thead class="table-dark ">
         <tr>
             <th scope="col">date</th>
@@ -13,21 +21,8 @@
         </tr>
     </thead>
     <form method='post'>
-        <tbody>
-            <?php
+        <tbody id="buyingTransaction-table">
 
-            foreach ($this->result as $row) {
-                echo " 
-<tr>
-<td>" . $row['datee'] . "</td>
-<td>" . $row['name'] . "</td> 
-<td>" . $row['quantity'] . "</td>
-<td>" . $row['price'] . "</td> 
-<td>" . $row['vendor'] . "</td> 
-</tr>
-";
-            }
-            ?>
 
         </tbody>
 </table>

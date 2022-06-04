@@ -5,40 +5,11 @@ class Items extends Database
     protected $result;
     public $user_id;
 
-    public function __construct()
-    {
-        $_SERVER['QUERY_STRING'];
-    }
-
     public function dashboard($func)
     {
         $charts = new Items();
         $user_id = $_SESSION['user']['id'];
         $this->result = $charts->$func($user_id);
-        return $this->result;
-    }
-
-    public function sellingTransaction()
-    {
-        $user_id = $_SESSION['user']['id'];
-        $sql = "select * from selling_transaction where user_id='$user_id' order by datee";
-        $this->result = $this->query($sql);
-        return $this->result;
-    }
-
-    public function buyingTransaction()
-    {
-        $user_id = $_SESSION['user']['id'];
-        $sql = "select * from buying_transaction where user_id='$user_id' order by datee";
-        $this->result = $this->query($sql);
-        return $this->result;
-    }
-
-    public function inventory()
-    {
-        $user_id = $_SESSION['user']['id'];
-        $sql = "select * from items where user_id='$user_id'";
-        $this->result = $this->query($sql);
         return $this->result;
     }
 

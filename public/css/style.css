@@ -36,6 +36,11 @@
 		height: calc(100% - var(--topNavbarHeight));
 		top: var(--topNavbarHeight);
 	}
+	footer{
+	margin-left: calc(var(--offcanvas-width));
+	/* margin-top: 300px; */
+}
+
 }
 
 @media(max-width:768px){
@@ -84,10 +89,6 @@
 	
 }
 
-footer{
-	margin-left: calc(var(--offcanvas-width));
-	/* margin-top: 300px; */
-}
 
 
 /* settings css */

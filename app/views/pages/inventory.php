@@ -22,34 +22,10 @@
         </tr>
     </thead>
     <form method='post'>
-        <tbody>
-            <?php
-            foreach ($this->result as $row) {
-                $id = $row['id'];
-                $name = $row['name'];
-                $cp = $row['cp'];
-                $sp = $row['sp'];
-                $quantity = $row['quantity'];
-            ?>
+        <tbody id="inventory-table">
 
-                <tr>
-                    <td> <?php echo $name ?> </td>
-                    <td><?php echo $cp ?></td>
-                    <td> <?php echo $sp ?></td>
-                    <td> <?php echo $quantity ?> </td>
-                    <td>
-                        <div class='me-auto'>
-                            <button type='button' class='btn btn-primary editButton' data-toggle='tooltip' data-placement='top' title='edit' onclick="getId(<?php echo $id ?>)"><i class='fa-solid fa-pen-to-square'></i></button>
-                            <button type='button' class='btn btn-danger deleteButton' data-toggle='tooltip' data-placement='top' title='delete' onclick="getId(<?php echo $id ?>)"><i class='fa-solid fa-trash'></i> </button>
-                            <button type='button' class='btn btn-success soldButton' data-toggle='tooltip' data-placement='top' title='sale' onclick="getId(<?php echo $id ?>)"><i class='fa-solid fa-check'></i></button>
-                        </div>
-                    </td>
-                </tr>
-
-            <?php
-            }
-            ?>
         </tbody>
+    </form>
 </table>
 
 

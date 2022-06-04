@@ -10,13 +10,10 @@ class Core
 
     protected $currentController = "Pages";
     protected $currentMethod = "dashboard";
-    protected $params = [];
 
     public function __construct()
     {
         $url = $this->getUrl();
-
-
         //look in controllers for first index
 
         if (isset($url)) {
@@ -33,16 +30,11 @@ class Core
                 $this->currentMethod = $url[1];
             }
             unset($url[1]);
-
-            if (isset($url)) {
-                $this->params = array_values($url);
-            }
         }
         $controller = $this->currentController;
         $method = $this->currentMethod;
-        $params = $this->params;
 
-        $controller->$method($params);
+        $controller->$method();
         //$this->currentController->$this->currentMethod($this->params);
     }
 

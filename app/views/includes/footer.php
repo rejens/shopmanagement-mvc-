@@ -45,8 +45,9 @@
 <!--- footer end-->
 
 
-<script src="<?php echo URLROOT . 'js/customScript.js' ?>"></script>
-<script src="<?php echo URLROOT . 'js/ajax.js' ?>"></script>
+
+<script src="http://localhost/4thsem/advance_php/anotherMVC/public//js/customScript.js"></script>
+<script src="http://localhost/4thsem/advance_php/anotherMVC/public//js/ajax.js"></script>
 
 
 </body>

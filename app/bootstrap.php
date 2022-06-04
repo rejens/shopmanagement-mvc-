@@ -3,10 +3,10 @@
 
 include_once "config/config.php";
 
-// include_once "libraries/Core.php";
-// include_once "libraries/Controller.php";
-// include_once "libraries/Database.php";
+include_once "libraries/Core.php";
+include_once "libraries/Controller.php";
+include_once "libraries/Database.php";
 
-spl_autoload_register(function ($class) {
-    require_once "libraries/$class.php";
-});
+// spl_autoload_register(function ($class) {
+//     require_once "libraries/$class.php";
+// });

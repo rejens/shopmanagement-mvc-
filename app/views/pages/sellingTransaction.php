@@ -14,27 +14,8 @@
     </thead>
 
     <form method='post'>
-        <tbody>
-            <?php
+        <tbody id="salesTransaction-table">
 
-            foreach ($this->result as $row) {
-                echo " 
-<tr>
-
-<td>" . $row['datee'] . "</td>
-<td>" . $row['name'] . "</td> 
-<td>" . $row['quantity'] . "</td>
-<td>" . $row['pl'] . "</td> 
-<td>" . $row['salesAmt'] . "</td> 
-
-
-</tr>
-
-
-
-";
-            }
-            ?>
         </tbody>
 </table>
 

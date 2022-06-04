@@ -14,8 +14,6 @@
 							<a href="<?php echo URLROOT ?>pages/inventory" class="nav-link text-dark list-group-item-action list-group-item-light" id="v-pills-profile-tab"><i class="fa-solid fa-table-list pr-2 mr-3"></i> inventory</a>
 							<a href="<?php echo URLROOT ?>pages/sellingTransaction" class="nav-link text-dark list-group-item-action list-group-item-light " id="v-pills-profile-tab"><i class="fa-solid fa-table-list pr-2 mr-3"></i> sales transaction</a>
 							<a href="<?php echo URLROOT ?>pages/buyingTransaction" class="nav-link text-dark list-group-item-action list-group-item-light " id="v-pills-profile-tab"><i class="fa-solid fa-table-list pr-2 mr-3"></i> buying transaction</a>
-							<a href="pages/buyingTransaction" class="nav-link text-dark list-group-item-action list-group-item-light " id="v-pills-profile-tab"><i class="fa-solid fa-table-list pr-2 mr-3"></i> another buying transaction</a>
-
 						</ul>
 
 
